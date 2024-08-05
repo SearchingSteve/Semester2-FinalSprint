@@ -18,7 +18,7 @@ Dog Store is a React application designed to provide a user-friendly interface f
 
 The design for the Dog Store was created using Figma, adhering to the principles of good UI/UX. The layout provides an intuitive navigation experience, and the visual elements are crafted to be aesthetically pleasing and functional.
 
-## Features
+##Features
 - Home Page: Introduction to the Dog Store.
 - Product List: Displays all available dog products.
 - Product Detail: Detailed view of a single product.
@@ -35,25 +35,21 @@ The design for the Dog Store was created using Figma, adhering to the principles
 ## Installation
 
 1. **Clone the repository**:
-```bash
-git clone https://github.com/stezzly/Semester2-FinalSprint.git
-cd dog-store
-```
+   ```bash
+   git clone https://github.com/yourusername/dog-store.git
+   cd dog-store
 2. **Install Dependencies:** 
 ```bash
 npm install
-```
 
 3. **Start the mock JSON server:**
 ```bash
 npm install -g json-server
 json-server --watch db.json --port 5000
-```
 
 4. **Start the React application:**
-```bash
+
 npm start
-```
 
 ## Usage
 
@@ -61,19 +57,16 @@ npm start
 2. Browse through the products, view product details, add items to the cart, and proceed to checkout.
 
 ## Testing
-
 1. **Run unit tests**:
    ```bash
    npm test
-   ```
-Unit tests are provided for the following components:
 
+Unit tests are provided for the following components:
 - Header
 - Footer
 - ProductCard
 
 ## Technologies Used
-
 - React
 - React Router
 - JSON Server
@@ -82,7 +75,6 @@ Unit tests are provided for the following components:
 - CSS
 
 ## Contributing
-
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository.
@@ -91,5 +83,4 @@ Contributions are welcome! Please follow these steps:
 4. Submit a pull request.
 
 ## License
-
-This project is licensed under the MIT License.
+This project is provided for personal use only. Redistribution, modification, or commercial use in any form is strictly prohibited without prior written permission from the author.
