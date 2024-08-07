@@ -1,0 +1,32 @@
+/* Product List CSS */
+/* submission date: august 12, 2024 */
+/* author: sara woodford */
+
+@font-face{
+    font-family: 'gothic';
+    src: url('../font/CarroisGothic-Regular.ttf');
+}
+
+.productItemCont{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(188, 187, 187);
+}
+
+.productItemCont h4{
+    color: black;
+    font-family: 'gothic', sans-serif;
+    font-size: 18pt;
+}
+
+.productItemCont p{
+    color: black;
+    font-family: 'gothic', sans-serif;
+    font-size: 14pt;
+}
+
+.productImage{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
