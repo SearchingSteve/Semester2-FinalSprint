@@ -1,11 +1,11 @@
 /* Product List CSS */
-/* submission date: august 12, 2024 */
-/* author: sara woodford */
+/* Submission Date: August 12, 2024 */
+/* Author: Sara Woodford */
 
-@font-face{
+/* @font-face{
     font-family: 'gothic';
     src: url('../font/CarroisGothic-Regular.ttf');
-}
+} */
 
 .productItemCont{
     width: 150px;
