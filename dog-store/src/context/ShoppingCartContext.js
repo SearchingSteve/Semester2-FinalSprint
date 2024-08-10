@@ -28,4 +28,8 @@ export const ShoppingCartProvider = ({ children }) => {
       {children}
     </ShoppingCartContext.Provider>
   );
+<<<<<<< Updated upstream
 };
+=======
+};
+>>>>>>> Stashed changes

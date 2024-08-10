@@ -41,4 +41,8 @@ const Checkout = () => {
   );
 };
 
+<<<<<<< Updated upstream
 export default Checkout;
+=======
+export default Checkout;
+>>>>>>> Stashed changes
