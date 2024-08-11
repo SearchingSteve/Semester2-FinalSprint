@@ -1,19 +1,26 @@
-const products = [
-     // Url image examples
-     { id: 1, name: 'Product 1', description: 'Description of Product 1', price: 10, imageUrl: 'https://images.unsplash.com/photo-1560807707-8cc77767d783' },
-     { id: 2, name: 'Product 2', description: 'Description of Product 2', price: 20, imageUrl: 'https://images.unsplash.com/photo-1532353949707-2e77707ee8a7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D' },
-     { id: 3, name: 'Product 3', description: 'Description of Product 3', price: 30, imageUrl: 'https://images.unsplash.com/photo-1514373941175-0a141072bbc8?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-     { id: 4, name: 'Product 4', description: 'Description of Product 4', price: 30, imageUrl: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6' },
+// mock API for dog store application
+// submission date: august 12, 2024
+// author: sara woodford
 
-    // Directory image examples
-    { id: 5, name: 'Product 5', description: 'Description of Product 5', price: 30, imageUrl: '../images/dogbag1.jpg' },
-    { id: 6, name: 'Product 6', description: 'Description of Product 6', price: 30, imageUrl: '../images/dogfood1.jpg' },
-    { id: 7, name: 'Product 7', description: 'Description of Product 7', price: 30, imageUrl: '../images/dogfood2.jpg' },
-    { id: 8, name: 'Product 8', description: 'Description of Product 8', price: 30, imageUrl: '../images/dogfood3.jpg' },
-  ];
-  
-  export const getProducts = () => products;
-  
-  export const getProductById = (productId) =>
+const products = [
+    {id: 1, product: 'Dog Bed', description: 'Comfy Dog Bed for Your Furry Friend!', price: 35, image: '../images/apiImages/DogBed.jpg'},
+    {id: 2, product: 'Harness', description: 'Suitable for Small Dogs', price: 30, image: '../images/apiImages/SmallHarness.jpg'},
+    {id: 3, product: 'Harness', description: 'Suitable for Medium Dogs', price: 30, image: '../images/apiImages/MediumHarness.jpg'},
+    {id: 4, product: 'Harness', description: 'Suitable for Large Dogs', price: 30, image: '../images/apiImages/LargeHarness.jpg'},
+    {id: 5, product: 'Stylish Collar', description: 'Perfect for X-Small - Small Dogs', price: 25, image:'../images/apiImages/SmallCollar.jpg'},
+    {id: 6, product: 'Stylish Collar', description: 'Perfect for Medium - Large Dogs', price: 25, image:'../images/apiImages/LargeCollar.jpg'},
+    {id: 7, product: "4' Leash", description: 'Real Leather Material to Prevent Wear and Tear', price: 20, image:'../images/apiImages/Leash.jpg'},
+    {id: 8, product: "15' Tether", description: 'Keep Your Fur Baby Outside With No Fear of Escape!', price: 20, image:'../images/apiImages/Tether.jpg'},
+    {id: 9, product: 'Dog Treat Chews', description: 'Your Dog Will Love These Dried Liver Chews!', price: 15, image: '../images/apiImages/ChewTreat.jpg'},
+    {id: 10, product: 'Dog Bones', description: 'Kepp Your Dog Busy With These Real Bones - Great For Dental Health!', price: 10, image: '../images/apiImages/BoneTreat.jpg'},
+    {id: 11, product: 'Deshedding Brush', description: 'No Body Likes Dog Hair all Over Their House - This Brush Will Cut Down on Excessive Shedding!', price: 10, image: '../images/apiImages/Brush.jpg',}, 
+    {id: 12, product: 'Dog Bone Toy', description: 'This Silicone Dog Bone Can Withstand All of Your Dogs Chews!', price: 5, image: '../images/apiImages/BoneToy.jpg'},
+    {id: 13, product: 'Dog Rope Toy', description: 'Tire Your Dog Out With Some Tug of War! This Toy Will Keep Them Busy for Hours', price: 5, image: '../images/apiImages/RopeToy.jpg'},
+    {id: 14, product: 'Tennis Balls - 3 Pack', description: "Who Doesn't Love Fetch? This 3 Pack Provides Triple the Fun!", price: 5, image: '../images/apiImages/3PackBalls.jpg'},
+    {id: 15, product: 'Tennis Ball', description: "A Classic Toy That Every Dog Loves!", price: 2, image: '../images/apiImages/TennisBall.jpg'},
+];
+
+export const getProducts = () => products;
+
+export const getProductById = (productId) => 
     products.find((product) => product.id === productId);
-  
