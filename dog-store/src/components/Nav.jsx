@@ -19,11 +19,12 @@ const Nav = () => {
 
     <div className ="navItems">
       <div className="navShoppingCart" onClick={() => navigate('/cart')}>
-        <img src="/images/apiImages/shopping-cart-icon.png" alt="Shopping Cart" className="navShoppingCartImage" />
+      Shopping Cart 🛒
+
       </div>
 
       <div className="navCheckout" onClick={() => navigate('/checkout')}>
-        <img src="/images/apiImages/shopping-cart-icon.png" alt="Checkout" className="navCheckoutImage" />
+      Checkout 💳
       </div>
       </div>
     </nav>
