@@ -42,7 +42,7 @@ coverage/
 
 # Gatsby files
 .cache/
-public/
+
 
 # Vuepress build output
 .vuepress/dist

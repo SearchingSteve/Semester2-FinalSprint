@@ -34,7 +34,7 @@ const Checkout = () => {
         ))}
       </ul>
       <div className="checkout-summary">
-        <p>Total Cost: <strong>${totalCost.toFixed(2)}</strong></p>
+        <p>Total Cost: ${totalCost.toFixed(2)}</p>
         <button onClick={handleCheckout}>Checkout</button>
       </div>
     </div>
