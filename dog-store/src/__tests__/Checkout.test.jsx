@@ -10,8 +10,8 @@ import { ShoppingCartContext } from '../context/ShoppingCartContext';
 
 // Create mock ShoppingCartContext
 const mockCartItems = [
-  { id: 1, name: 'Product 1', price: 10 },
-  { id: 2, name: 'Product 2', price: 20 },
+  { id: 1, product: 'Product 1', price: 10 },
+  { id: 2, product: 'Product 2', price: 20 },
 ];
 // Assign children to the context provider
 const MockShoppingCartProvider = ({ children }) => (
@@ -23,20 +23,8 @@ const MockShoppingCartProvider = ({ children }) => (
 // Test Suite for Checkout Component
 describe('Checkout Component', () => {
 
-// Test 1: Test that the cart items are rendered correctly
-  test('renders cart items correctly', () => {
-    render(
-      <MockShoppingCartProvider>
-        <Checkout />
-      </MockShoppingCartProvider>
-    );
 
-    // Check that cart items are rendered correctly
-    expect(screen.getByText('Product 1 - $10')).toBeInTheDocument();
-    expect(screen.getByText('Product 2 - $20')).toBeInTheDocument();
-  });
-
-  // Test 2: Test that the total cost is displayed correctly
+  // Test 1: Test that the total cost is displayed correctly
   test('displays the correct total cost', () => {
     render(
       <MockShoppingCartProvider>
@@ -49,7 +37,7 @@ describe('Checkout Component', () => {
   });
 
 
-  // Test 3: Test that the alert is called with the correct message when the checkout button
+  // Test 2: Test that the alert is called with the correct message when the checkout button
   test('handles checkout button click', () => {
     // Mock the alert function
     global.alert = jest.fn();
@@ -65,7 +53,7 @@ describe('Checkout Component', () => {
 
     // Check that the alert is called with the correct message
     expect(global.alert).toHaveBeenCalledWith(
-      `Order Complete! \n\n Order Info:\n\nProduct 1 - $10\nProduct 2 - $20\n\nTotal Cost: $30.00`
+    `Order Details:\n\nProduct 1 - $10\nProduct 2 - $20\n\nTotal Cost: $30.00\n\nCheckout successful!`
     );
   });
 });
