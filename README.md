@@ -30,7 +30,7 @@ The design for the Dog Store was created using Figma, adhering to the principles
 - CSS and React code that closely approximates the Figma design.
 - Uses React Router for navigation.
 - Unit tests for key components.
-- Mock JSON server for UI testing.
+- API for UI testing.
 
 ## Installation
 
@@ -39,18 +39,12 @@ The design for the Dog Store was created using Figma, adhering to the principles
    git clone https://github.com/yourusername/dog-store.git
    cd dog-store
    ```
+
 2. **Install Dependencies:** 
 ```bash
 npm install
 ```
-
-3. **Start the mock JSON server:**
-```bash
-npm install -g json-server
-json-server --watch db.json --port 5000
-```
-
-4. **Start the React application:**
+3. **Start the React application:**
 ```bash
 npm start
 ```
@@ -64,6 +58,7 @@ npm start
 1. **Run unit tests**:
    ```bash
    npm test
+   ```
 
 Unit tests are provided for the following components:
 - Header
@@ -89,3 +84,10 @@ Then follow these steps:
 
 ## License
 This project is provided for personal use only. Redistribution, modification, or commercial use in any form is strictly prohibited without prior written permission from the author.
+
+
+## Authors
+Michelle Anderson, Sara Woodford, Stephen Crocker
+
+## Dated
+Aug 11, 2024
