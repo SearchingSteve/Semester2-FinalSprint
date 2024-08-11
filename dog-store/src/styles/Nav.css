@@ -34,5 +34,7 @@
   .navHeader{
     font-size: 18pt;
     color: white;
+    text-align: center;
+    margin-left: 250px;
   }
   
