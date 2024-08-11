@@ -11,6 +11,12 @@ const Nav = () => {
         <img src="../images/apiImages/BoneToy.jpg" alt="Home" className="navIconImage" />
       </div>
 
+      <div className='navHeader'>
+        <h2>
+          The Barking Lot
+        </h2>
+      </div>
+
     <div className ="navItems">
       <div className="navShoppingCart" onClick={() => navigate('/cart')}>
         <img src="/images/apiImages/shopping-cart-icon.png" alt="Shopping Cart" className="navShoppingCartImage" />
