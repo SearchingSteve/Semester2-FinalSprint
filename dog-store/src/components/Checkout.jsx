@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-/* Checkout Component */
-/* Submission Date: August 12, 2024 */
-/* Author: Stephen Crocker */
-
-=======
->>>>>>> DogStoreTest
 import React, { useContext } from 'react';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import '../styles/Checkout.css';
