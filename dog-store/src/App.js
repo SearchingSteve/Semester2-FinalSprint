@@ -5,11 +5,14 @@ import ProductDetails from './components/ProductDetails';
 import ShoppingCart from './components/ShoppingCart';
 import Checkout from './components/Checkout';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
+import Nav from './components/Nav';
 
 const App = () => {
   return (
+    
     <ShoppingCartProvider>
       <Router>
+      <Nav/>
         <Routes>
           <Route path="/" element={<ProductList />} />
           <Route path="/product/:productId" element={<ProductDetails />} />

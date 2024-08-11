@@ -1,0 +1,33 @@
+.nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    height: 50px;
+  }
+  
+  .navIconImage {
+    height: 40px; /* Adjust height if necessary */
+    width: 40px;  /* Adjust width if necessary */
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .navItems {
+    display: flex; /* Align checkout and shopping cart icons horizontally */
+    align-items: center;
+  }
+  
+  .navShoppingCart, .navCheckout {
+    padding: 5px;
+    margin: 0 10px; /* Add margin for spacing between items */
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Ensure icons are visible against dark background */
+  }
+  
+  .navIconImage {
+    margin-left: 10px;
+  }
+  
