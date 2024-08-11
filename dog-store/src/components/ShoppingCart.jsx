@@ -1,16 +1,18 @@
 import React, { useContext } from "react";
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 
-// Shopping cart component to display the items in the cart
 const ShoppingCart = (props) => {
-  const { id, product, price, Image } = props.data;
+  const { id, product, price, image } = props.data || {}; 
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShoppingCartContext);
 
- //Display the shopping cart component 
-    return (
+  if (!props.data) {
+    return <div>Data not available</div>; 
+  }
+
+  return (
     <div className="cartItem">
-      <img src={Image} />
+      <img src={image} alt={product} />
       <div className="description">
         <p>
           <b>{product}</b>

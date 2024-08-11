@@ -1,31 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { productsById } from '../api/api';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
+import '../styles/ProductDetails.css';  
 
-
-// Product Details component to display the item details being viewed
 const ProductDetails = () => {
-    const { id, product, description, price, image } = props.data;
-    const { addToCart, cartItems } = useContext(ShoppingCartContext);
-  
-    const cartItemCount = cartItems[id];
+  const { productId } = useParams();
+  const product = productsById(parseInt(productId));
+  const { addToCart } = useContext(ShoppingCartContext);
 
+  if (!product) {
+    return <div>Product not found</div>;
+  }
 
- //Dislay the Product details 
-    return (
-      <div className="product">
-        <img src={image} />
-        <div className="description">
-          <p>
-            <b>{product}</b></p>
-          <p>{description}</p>
-          <p> ${price}</p>
-        </div>
-        <button className="addToCartBttn" onClick={() => addToCart(id)}>
-          Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
-        </button>
+  return (
+    <div className="product-details">
+      <img src={product.image} alt={product.name} className="product-image" />
+      <div className="product-info">
+        <h1>{product.name}</h1>
+        <p>{product.description}</p>
+        <p>Price: ${product.price}</p>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
+        <Link to="/cart" className="cart-link">Go to Shopping Cart</Link>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-
-export default ProductDetails
+export default ProductDetails;

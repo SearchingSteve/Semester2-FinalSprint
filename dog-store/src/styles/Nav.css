@@ -1,33 +1,4 @@
 .nav {
-<<<<<<< Updated upstream
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-  position: relative; 
-  height: 50px; 
-}
-
-.navIcon {
-  cursor: pointer;
-}
-
-.navIcon {
-  width: 24px; 
-  height: 24px;
-}
-
-.navCheckout{
-  position: absolute;
-  padding: 5px;
-  margin: 5px;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-=======
     background-color: #333;
     padding: 10px;
     display: flex;
@@ -55,4 +26,3 @@
     font-size: 24px;
     cursor: pointer;
   }
->>>>>>> Stashed changes

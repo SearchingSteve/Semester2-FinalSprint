@@ -2,31 +2,78 @@
 /* Submission Date: August 12, 2024 */
 /* Author: Sara Woodford */
 
-/* @font-face{
+/* Uncomment if using custom font */
+/*
+@font-face {
     font-family: 'gothic';
     src: url('../font/CarroisGothic-Regular.ttf');
-} */
+}
+*/
 
-.productItemCont{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(188, 187, 187);
+.productList {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.productItemCont h4{
-    color: black;
+.productItemCont {
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.productItemCont h4 {
+    color: #333;
     font-family: 'gothic', sans-serif;
     font-size: 18pt;
+    margin: 10px 0;
 }
 
-.productItemCont p{
-    color: black;
+.productItemCont p {
+    color: #555;
     font-family: 'gothic', sans-serif;
     font-size: 14pt;
+    margin: 5px 0;
 }
 
-.productImage{
-    width: 50px;
-    height: 50px;
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border: 1px solid black;
+    margin: 10px 0;
+}
+
+.details-link {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5200;
 }

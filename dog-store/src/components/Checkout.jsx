@@ -35,14 +35,10 @@ const Checkout = () => {
           </li>
         ))}
       </ul>
-      <p>Total Cost: ${totalCost.toFixed(2)}</p> {/* Ensure this format */}
+      <p>Total Cost: ${totalCost.toFixed(2)}</p> 
       <button onClick={handleCheckout}>Checkout</button>
     </div>
   );
 };
 
-<<<<<<< Updated upstream
 export default Checkout;
-=======
-export default Checkout;
->>>>>>> Stashed changes

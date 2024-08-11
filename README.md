@@ -18,7 +18,7 @@ Dog Store is a React application designed to provide a user-friendly interface f
 
 The design for the Dog Store was created using Figma, adhering to the principles of good UI/UX. The layout provides an intuitive navigation experience, and the visual elements are crafted to be aesthetically pleasing and functional.
 
-##Features
+## Features
 - Home Page: Introduction to the Dog Store.
 - Product List: Displays all available dog products.
 - Product Detail: Detailed view of a single product.
@@ -38,18 +38,22 @@ The design for the Dog Store was created using Figma, adhering to the principles
    ```bash
    git clone https://github.com/yourusername/dog-store.git
    cd dog-store
+   ```
 2. **Install Dependencies:** 
 ```bash
 npm install
+```
 
 3. **Start the mock JSON server:**
 ```bash
 npm install -g json-server
 json-server --watch db.json --port 5000
+```
 
 4. **Start the React application:**
-
+```bash
 npm start
+```
 
 ## Usage
 
@@ -69,13 +73,14 @@ Unit tests are provided for the following components:
 ## Technologies Used
 - React
 - React Router
+- CSS
 - JSON Server
 - Jest (for unit testing)
 - Figma (for design)
-- CSS
 
 ## Contributing
-Contributions are welcome! Please follow these steps:
+Contributions are welcome, but please ask before hand to ensure following licensing.
+Then follow these steps:
 
 1. Fork the repository.
 2. Create a new branch.

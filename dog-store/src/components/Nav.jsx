@@ -10,15 +10,11 @@ const Nav = () => {
       <div className="navIcon" onClick={() => navigate('/')}>
         <img src="../images/apiImages/BoneToy.jpg" alt="Home" className="navIconImage" />
       </div>
-      <div className="navCheckout" onClick={() => navigate('/checkout')}>
-        <img src="/images/apiImages/shopping-cart-icon.png" alt="Checkout" className="navCheckoutImage" />
+      <div className="navShoppingCart" onClick={() => navigate('/shopping-cart')}>
+        <img src="/images/apiImages/shopping-cart-icon.png" alt="Shopping Cart" className="navCheckoutImage" />
       </div>
     </nav>
   );
 };
 
-<<<<<<< Updated upstream
 export default Nav;
-=======
-export default Nav;
->>>>>>> Stashed changes
