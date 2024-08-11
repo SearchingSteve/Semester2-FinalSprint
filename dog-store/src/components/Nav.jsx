@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <div className="navIcon" onClick={() => navigate('/')}>
-        <img src="../images/apiImages/BoneToy.jpg" alt="Home" className="navIconImage" />
+        <img src="../images/headerImage.jpg" alt="Home" className="navIconImage" />
       </div>
 
       <div className='navHeader'>
