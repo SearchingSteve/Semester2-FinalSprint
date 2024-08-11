@@ -1,42 +1,49 @@
+<<<<<<< HEAD
 /* Checkout Component */
 /* Submission Date: August 12, 2024 */
 /* Author: Stephen Crocker */
 
+=======
+>>>>>>> DogStoreTest
 import React, { useContext } from 'react';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import '../styles/Checkout.css';
 
-// Checkout component to display the items in the cart and handle the checkout process
 const Checkout = () => {
-  // Access cartItems from the ShoppingCartContext
   const { cartItems } = useContext(ShoppingCartContext);
 
-  // Calculate the total cost of the items in the cart
+  // Calculate total cost
   const totalCost = cartItems.reduce((sum, item) => sum + item.price, 0);
 
-  // Create a string of order details to display to the user
+  // Format order details
   const orderDetails = cartItems
-    .map(item => `${item.name} - $${item.price}`)
+    .map(item => `${item.product} - $${item.price}`)
     .join('\n');
 
-  // Function to handle the checkout process and alert user
+  // Handle checkout
   const handleCheckout = () => {
-    alert(`Order Complete! \n\n Order Info:\n\n${orderDetails}\n\nTotal Cost: $${totalCost.toFixed(2)}`);
+    alert(`Order Details:\n\n${orderDetails}\n\nTotal Cost: $${totalCost.toFixed(2)}\n\nCheckout successful!`);
   };
 
-  // Display the checkout component
   return (
     <div className="checkout">
       <h1>Checkout</h1>
       <ul>
         {cartItems.map(item => (
-          <li key={item.id}>
-            {item.name} - ${item.price}
+          <li key={item.id} className="checkout-item">
+            <img src={item.image} alt={item.product} className="checkout-item-image" />
+            <div className="checkout-item-details">
+              <h4>{item.product}</h4>
+              <p>{item.description}</p>
+              <p className="checkout-item-price">${item.price}</p>
+            </div>
           </li>
         ))}
       </ul>
-      <p>Total Cost: ${totalCost.toFixed(2)}</p> 
-      <button onClick={handleCheckout}>Checkout</button>
+      <div className="checkout-summary">
+        <p>Total Cost: <strong>${totalCost.toFixed(2)}</strong></p>
+        <button onClick={handleCheckout}>Checkout</button>
+      </div>
     </div>
   );
 };

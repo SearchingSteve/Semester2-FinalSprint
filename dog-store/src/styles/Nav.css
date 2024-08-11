@@ -2,27 +2,32 @@
     background-color: #333;
     padding: 10px;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between; /* Distribute space between items */
     align-items: center;
-    position: relative; 
-    height: 50px; 
+    height: 50px;
   }
   
-  .navIcon {
+  .navIconImage {
+    height: 40px; /* Adjust height if necessary */
+    width: 40px;  /* Adjust width if necessary */
+    margin: 5px;
     cursor: pointer;
   }
   
-  .navIcon {
-    width: 24px; 
-    height: 24px;
+  .navItems {
+    display: flex; /* Align checkout and shopping cart icons horizontally */
+    align-items: center;
   }
   
-  .navCheckout{
-    position: absolute;
+  .navShoppingCart, .navCheckout {
     padding: 5px;
-    margin: 5px;
-    top: 10px;
-    right: 10px;
+    margin: 0 10px; /* Add margin for spacing between items */
     font-size: 24px;
     cursor: pointer;
+    color: white; /* Ensure icons are visible against dark background */
   }
+  
+  .navIconImage {
+    margin-left: 10px;
+  }
+  

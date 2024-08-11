@@ -22,5 +22,5 @@ const products = [
 
 export const getProducts = () => products;
 
-export const productsById = (productId) => 
+export const getProductById = (productId) => 
     products.find((product) => product.id === productId);

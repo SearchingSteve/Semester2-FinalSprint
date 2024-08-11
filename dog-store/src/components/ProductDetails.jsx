@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { productsById } from '../api/api';
+import { getProductById } from '../api/api';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 import '../styles/ProductDetails.css';  
 
 const ProductDetails = () => {
   const { productId } = useParams();
-  const product = productsById(parseInt(productId));
+  const product = getProductById(parseInt(productId));
   const { addToCart } = useContext(ShoppingCartContext);
 
   if (!product) {
